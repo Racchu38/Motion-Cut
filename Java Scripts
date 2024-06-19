@@ -1,0 +1,16 @@
+document.getElementById('toggle').addEventListener('change', function () {
+    const isChecked = this.checked;
+    const basicPrice = document.getElementById('basic-price');
+    const standardPrice = document.getElementById('standard-price');
+    const premiumPrice = document.getElementById('premium-price');
+
+    if (isChecked) {
+        basicPrice.textContent = '$100';
+        standardPrice.textContent = '$200';
+        premiumPrice.textContent = '$300';
+    } else {
+        basicPrice.textContent = '$10';
+        standardPrice.textContent = '$20';
+        premiumPrice.textContent = '$30';
+    }
+});
